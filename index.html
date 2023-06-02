@@ -11,6 +11,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Easybank landing page</title>
@@ -22,7 +23,7 @@
 
     <div class="relative z-50 lg:px-12">
 
-      <nav class="p-5 flex flex-row justify-between bg-white items-center z-50 ">
+      <nav class="px-5 pt-2 flex flex-row justify-between bg-white items-center z-50 ">
         <div>
           <img class="w-48" src="./images/logo.svg"/>
         </div>
@@ -34,15 +35,15 @@
         </div>
 
         <div class="hidden md:flex flex-row text-grayishBlue gap-7">
-          <div>Home</div>
-          <div>About</div>
-          <div>Contact</div>
-          <div>Blog</div>
-          <div>Careers</div>
+          <div class="hover:text-darkBlue cursor-pointer mx-5 py-5 list">Home</div>
+          <div class="hover:text-darkBlue cursor-pointer mx-5 py-5 list">About</div>
+          <div class="hover:text-darkBlue cursor-pointer mx-5 py-5 list">Contact</div>
+          <div class="hover:text-darkBlue cursor-pointer mx-5 py-5 list">Blog</div>
+          <div class="hover:text-darkBlue cursor-pointer mx-5 py-5 list">Careers</div>
         </div>
 
         <div class="hidden md:block">
-          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-paragraph text-white rounded-full px-10 py-3">Request Invite</button>
+          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-paragraph text-white rounded-full px-8 py-2 hover:opacity-60 cursor-pointer">Request Invite</button>
         </div>
       </nav>
     </div>
@@ -72,7 +73,7 @@
         <p class="my-5 text-grayishBlue text-paragraph md:px-20 lg:px-0 md:text-xl ">Take your financial life online. Your Easybank account will be a one-stop-shop 
           for spending, saving, budgeting, investing, and much more.</p>
         <div>
-          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-xl text-white rounded-full px-10 py-3">Request Invite</button>
+          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-xl text-white rounded-full px-8 py-2 hover:opacity-60 cursor-pointer">Request Invite</button>
         </div>
         
       </div>
@@ -135,7 +136,7 @@
 
         <div class="text-left Sans p-5">
           <p class="text-grayishBlue mb-2 font-light lg:text-[12px]">By Claire Robinson</p>
-          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem]">Receive money in any currency with no fees</h3>
+          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem] hover:text-limeGreen cursor-pointer">Receive money in any currency with no fees</h3>
           <p class="text-paragraph text-grayishBlue  lg:text-[12px]">The world is getting smaller and we’re becoming more mobile. So why should you be 
             forced to only receive money in a single …</p>
         </div>
@@ -146,7 +147,7 @@
         <img class="rounded-t-lg min-h-full " src="./images/image-restaurant.jpg"/>
         <div class="text-left Sans p-5">
           <p class="text-grayishBlue mb-2 font-light lg:text-[12px] ">By Wilson Hutton</p>
-          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem]">Treat yourself without worrying about money</h3>
+          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem] hover:text-limeGreen cursor-pointer">Treat yourself without worrying about money</h3>
           <p class="text-paragraph text-grayishBlue  lg:text-[12px]">Our simple budgeting feature allows you to separate out your spending and set 
             realistic limits each month. That means you …</p>
         </div>
@@ -156,7 +157,7 @@
         <img class="rounded-t-lg min-h-full" src="./images/image-plane.jpg"/>
         <div class="text-left Sans p-5">
           <p class="text-grayishBlue mb-2 font-light lg:text-[12px]">By Wilson Hutton</p>
-          <h3 class="text-2xl leading-tight mb-3  lg:text-[1.1rem]">Take your Easybank card wherever you go</h3>
+          <h3 class="text-2xl leading-tight mb-3  lg:text-[1.1rem] hover:text-limeGreen cursor-pointer">Take your Easybank card wherever you go</h3>
           <p class="text-paragraph text-grayishBlue lg:text-[12px]">We want you to enjoy your travels. This is why we don’t charge any fees on purchases 
             while you’re abroad. We’ll even show you …</p>
         </div>
@@ -166,7 +167,7 @@
         <img class="rounded-t-lg min-h-full" src="./images/image-confetti.jpg"/>
         <div class="text-left Sans p-5">
           <p class="text-grayishBlue mb-2 font-light lg:text-[12px]">By Claire Robinson</p>
-          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem]">Our invite-only Beta accounts are now live!</h3>
+          <h3 class="text-2xl leading-tight mb-3 lg:text-[1.1rem] hover:text-limeGreen cursor-pointer">Our invite-only Beta accounts are now live!</h3>
           <p class="text-paragraph text-grayishBlue  lg:text-[12px]">After a lot of hard work by the whole team, we’re excited to launch our closed beta. 
             It’s easy to request an invite through the site ...</p>
         </div>
@@ -184,31 +185,31 @@
         </div>
 
         <div class="flex flex-row gap-3 items-center mx-auto ">
-          <div><img class="w-8 fill-black" src="./images/icon-facebook.svg"/></div>
-          <div><img class="w-8" src="./images/icon-youtube.svg"/></div>
-          <div><img class="w-8" src="./images/icon-twitter.svg"/></div>
-          <div><img class="w-8" src="./images/icon-pinterest.svg"/></div>
-          <div><img class="w-8" src="./images/icon-instagram.svg"/></div>
+          <div class="cursor-pointer hover:scale-125 transition ease-out duration-300 "><img class="w-8 fill-black" src="./images/icon-facebook.svg"/></div>
+          <div class="cursor-pointer hover:scale-125 transition ease-out duration-300"><img class="w-8" src="./images/icon-youtube.svg"/></div>
+          <div class="cursor-pointer hover:scale-125 transition ease-out duration-300"><img class="w-8" src="./images/icon-twitter.svg"/></div>
+          <div class="cursor-pointer hover:scale-125 transition ease-out duration-300"><img class="w-8" src="./images/icon-pinterest.svg"/></div>
+          <div class="cursor-pointer hover:scale-125 transition ease-out duration-300"><img class="w-8" src="./images/icon-instagram.svg"/></div>
         </div>
 
       </div>
 
       <div class="grid grid-cols-1 text-white gap-16 mt-7 md:grid-cols-2 md:mt-0 lg:-ml-28">
         <div class="grid gap-4">
-          <div>About Us</div>
-          <div>Contact</div>
-          <div>Blog</div>
+          <div class="cursor-pointer hover:text-limeGreen">About Us</div>
+          <div class="cursor-pointer hover:text-limeGreen">Contact</div>
+          <div class="cursor-pointer hover:text-limeGreen">Blog</div>
         </div>
         <div class="grid gap-4">
-          <div>Careers</div>
-          <div>Support</div>
-          <div>Privacy Policy</div>
+          <div class="cursor-pointer hover:text-limeGreen">Careers</div>
+          <div class="cursor-pointer hover:text-limeGreen">Support</div>
+          <div class="cursor-pointer hover:text-limeGreen">Privacy Policy</div>
         </div>
       </div>
 
       <div class="grid grid-cols-1 gap-7 mt-7 md:mt-0">
         <div >
-          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-paragraph text-white rounded-full px-10 py-3">Request Invite</button>
+          <button class="bg-gradient-to-r from-limeGreen to-brightCyan text-paragraph text-white rounded-full px-8 py-2 hover:opacity-60 cursor-pointer">Request Invite</button>
         </div>
 
         <div class="text-grayishBlue">
